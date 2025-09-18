@@ -1,7 +1,19 @@
+import WelcomeMessage from './components/WelcomeMessage';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import Footer from './components/Footer';
+
+
+
+
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
+    <div>
+      <WelcomeMessage />
+      <Header />  
+      <MainContent />
+      <Footer />
     </div>
   );
 }

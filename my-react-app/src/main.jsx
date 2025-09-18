@@ -1,19 +1,12 @@
-import { createRoot } from 'react-dom/client'
+// main.jsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
 
-const myelement = (
-  <table>
-    <tr>
-      <th>Name</th>
-    </tr>
-    <tr>
-      <td>John</td>
-    </tr>
-    <tr>
-      <td>Elsa</td>
-    </tr>
-  </table>
-);
-
-createRoot(document.getElementById('root')).render(
-  myelement
+// React 18 uses createRoot instead of ReactDOM.render
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 )
